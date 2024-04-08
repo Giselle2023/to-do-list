@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+
+    <section class="container">
+
+        <h1>Organizar dia</h1>
+
+        <div>
+            <input type="text">
+            <select>
+                <option value="filtrar">Filtrar</option>
+                <option value="urgente">urgente</option>
+                <option value="faculdade">faculdade</option>
+                <option value="trabalho">trabalho</option>
+
+            </select>
+            <button onclick="createTarefa()">adicionar</button>
+        </div>
+        
+       
+
+    </section>
+  
+    <dialog>
+        <h3>Aviso</h3>
+        <p>
+          Por favor adicione alguma tarefa para continuar-mos
+        </p>
+        <button class="btn-close-modal">ok</button>
+    </dialog>
+  
+    <script src="script.js"></script>
+</body>
+</html>

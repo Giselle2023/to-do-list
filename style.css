@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --gradient: rgba(0, 0, 0, 0.196);
+}
+
+body{
+   
+    font-family: "Open Sans", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(244, 246, 246);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container{
+    margin-top: 4rem;
+    width: 650px;
+  
+
+}
+
+.container div{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+h1{
+    font-family: "Pacífico",cursive;
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.edit{
+    width: 15px;
+    height: 20px;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+
+input{
+    width: 85.5%;
+    padding: .7rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 4px var(--gradient);
+    font-size: 14px;
+}
+
+button{
+    cursor:pointer;
+    border: none;
+    background: rgb(91,162,236);
+    padding: .7rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.349);
+    border-radius: 4px;
+}
+
+
+.content{
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: .6rem;
+    box-shadow: 0 0 5px var(--gradient);
+    margin-top: .9rem;
+    background: white;
+    border-radius: 4px;
+    font-size: 13px;
+
+}
+
+.btnDelete{
+    background: rgb(91,162,236);
+    border: none;
+    padding: .5rem .9rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.134);
+    font-weight: 700;
+    border-radius: 4px;
+    color: rgb(223, 224, 228);
+}
+
+dialog::backdrop{
+    background-color: rgba(128, 128, 128, 0.138);
+}
+
+dialog{
+    margin: auto;
+    border-radius: 5px;
+   padding: 2rem 3rem;
+    border: none;
+    box-shadow: 0 0 10px rgba(77, 77, 77, 0.135);
+    line-height: 3rem;
+}
+
+.span{
+    background-color: rgb(29, 65, 65);
+    padding: .5rem;
+    border-radius:8px ;
+}
+
+select{
+    border: none;
+    cursor: pointer;
+    padding: .4rem;
+    outline: none;
+}
+
+section option{
+    padding: 1rem;
+}
