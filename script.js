@@ -1,18 +1,19 @@
+const input = document.querySelector('input');
+
+
 function createTarefa(){
 
-    const popUp = document.querySelector('dialog')
 
     const selectOption = document.createElement('span');
     selectOption.classList.add('span');
 
-    const input = document.querySelector('input').value
     const container = document.querySelector('.container')
-
+3
     const div = document.createElement('div');
     div.classList.add('content');
 
     const paragraph = document.createElement('p');
-    paragraph.innerHTML = input;
+    paragraph.innerHTML = input.value;
 
 
     const btnDelete = document.createElement('button');
@@ -21,22 +22,8 @@ function createTarefa(){
 
     const checkedTarefa = document.createElement('input');
     checkedTarefa.type = 'checkbox';
-    checkedTarefa.classList.add('edit')
-
-
-    if(input == ''){
-        popUp.showModal()
-        
-        const btn = document.querySelector('.btn-close-modal')
-           btn.addEventListener('click',()=>{
-               popUp.close()
-    
-           }) 
-           return
-    }
+    checkedTarefa.classList.add('edit');
        
-    
-
     checkedTarefa.addEventListener('click',()=>{
         
         if(checkedTarefa.checked){
@@ -82,6 +69,28 @@ function createTarefa(){
     div.appendChild(selectOption)
     div.appendChild(btnDelete);
 
+
+    localStorage.setItem('tarefasSalvas',container);
     
+}
+
+document.querySelector('#btn').addEventListener('click',()=>{
+    createTarefa();
+})
+
+function popUp(){
+
+    const popUp = document.querySelector('dialog')
+
+    if(input == ''){
+        popUp.showModal()
+        
+        const btn = document.querySelector('.btn-close-modal')
+           btn.addEventListener('click',()=>{
+               popUp.close()
     
+           }) 
+           return
+    }
+
 }
